@@ -6,6 +6,7 @@
 		this.compoundMode = false;
 		this.freq = "1";
 		this.interest = 0;
+		this.amount = 0;
 		
 		this.toggleMode = function() {
 			this.compoundMode = this.compoundMode ? false : true;
@@ -29,9 +30,11 @@
 				if(p != null && n != null && r != null) {
 					interest = (p*n*r)/100;
 					this.interest = interest;
+					this.amount = p + interest;
 				}
 				else {
 					this.interest = 0;
+					this.amount = 0;
 				}
 			}
 			else {
@@ -40,11 +43,13 @@
 				n = this.freq;
 				t = this.time;
 				if(p != null && r != null && n != null && t != null) {
-					interest = (p * Math.pow(1+(r/(100*n)), n*t)) - p;
-					this.interest = interest;
+					amount = (p * Math.pow(1+(r/(100*n)), n*t));
+					this.interest = amount - p;
+					this.amount = amount;
 				}
 				else {
 					this.interest = 0;
+					this.amount = 0;
 				}
 			}
 		};
