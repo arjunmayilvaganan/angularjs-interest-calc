@@ -1,7 +1,7 @@
-###An AngularJS Demo Application to calculate Simple Interest / Compound Interest.
+##An AngularJS Demo Application to calculate Simple Interest / Compound Interest.
 
 
-####Dependencies:
+__Dependencies__:
 
 1. Bootstrap v3.3.7
 2. jQuery v3.2.1
