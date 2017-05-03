@@ -1,4 +1,4 @@
-##An AngularJS Demo Application to calculate Simple Interest / Compound Interest.
+#An AngularJS Demo Application to calculate Simple Interest / Compound Interest.
 
 
 __Dependencies__:
